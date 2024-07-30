@@ -1,0 +1,22 @@
+functionality needed when clicked on:
+
+1) edit : 
+
+-> need to hide the object
+-> need to repopulate it in form
+-> the forms submit and reset buttons should go and must have only update button.
+->when clicked on update , we reset the form values and display the object back in one of the status blocks.
+
+2)delete:
+
+-> just delete the object from arr/list
+
+3) submit:
+
+->reset the fields
+-> data is sent in json format to the status block mentions if all fields are satisfied
+-> when fields not match the requirements, tell the user whats missing
+
+4) reset:
+
+->values in the form are reset

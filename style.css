@@ -1,0 +1,144 @@
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	//grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 16px;
+	padding-right:0px;
+	padding-left:16px;
+	margin:2.5rem;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left:37%;
+}
+
+h1{
+    margin-left:39%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="reset"]:hover{
+	background-color: #CC0000;	
+}
+
+
+button[type="reset"] {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="button"] {
+    background-color: #63C5DA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="button"]:hover{
+	background-color:#1A9AB4;
+}
+
+
+.emp-box{
+	background-color:#b8e2f4;
+	margin:20px;
+	padding: 20px;
+	text-align:left;
+}
+
+#editButton{
+	margin-right:6rem;
+}
+
+#updateBtn{
+	display:none;
+}
+#storeStatus{
+	display:none;
+}
+
+#myForm p {
+	color: red;
+	margin: 0px;
+	margin-bottom: 8px;
+	//visibility: hidden;
+	opacity:0;
+	font-size:0.75rem;
+	font-weight:bold;
+}
+
+#status{
+	margin-bottom :10px;
+}
+
+#submitBtn{
+	margin-right:7.5rem;
+}
+
+.grid-item>p{
+    font-size: 23px;
+    font-weight: bold;
+    color: #923b3b;
+}
+
+span{
+	color:red;
+}
+
+

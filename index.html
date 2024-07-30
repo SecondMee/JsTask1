@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="empDetails">
+		<h1> Employee Details</h1>
+		<form id="myForm">
+			<label for="empName">Name<span>*</span></label>
+			<input type="text" id="empName" name="empName" maxlength="15" placeholder="Enter Name"><br>
+			<p id="empNameP">Characters only</p>
+			<label for="empId">ID<span>*</span></label>
+			<input type="text" id="empId" name="empId" maxlength="10" placeholder="Enter ID"><br>
+			<p id="empIdP">No Special Characters allowed</p>
+			<label for="empPhone">Phone Number<span>*</span></label>
+			<input type="text" id="empPhone" name="empPhone" maxlength="10" placeholder="Enter number" pattern="[0-9]*"><br>
+			<p id="empPhoneP">Enter 10 digits	</p>
+			<label for'status">Status<span>*</span> </label>
+			<select id="status" name="status">
+				<option value="">Select Status</option>
+				<option value="new">New</option>
+				<option value="pending">Pending</option>
+				<option value="completed">Completed</option>
+			</select><br>
+			<p id="statusP">Select Status </p>
+			<button type="submit" onclick="myFunction();" id="submitBtn"> Submit </button>
+			<button type="reset" id="resetBtn"> Reset </button>	
+			<button type="button" onclick="update();" id="updateBtn"> Update </button>			
+		</form>
+	</div>
+	<div class="grid-container">
+		<div class="grid-item" id="new"><p>New</p></div>
+		<div class="grid-item" id="pending"><p>Pending</p></div>
+		<div class="grid-item" id="completed"><p>Completed</p></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

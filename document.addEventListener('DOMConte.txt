@@ -1,0 +1,119 @@
+/*document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    const formDataJSON = JSON.stringify(Object.fromEntries(formData));
+    console.log(formDataJSON);
+    this.reset();
+  });
+});
+*/
+
+
+
+
+function just(){
+		myCurrEdit = this.parentNode;
+		console.log("111111");
+		console.log(myCurrEdit);
+		console.log("222222222");
+		console.log(myCurrEdit);
+		myCurrEdit.remove();
+		const element = document.getElementById("completed");
+		element.appendChild(myCurrEdit);
+
+		
+	}
+
+
+//delete emp
+
+	/*document.getElementById('deleteButton').addEventListener('click', function() {
+    		const ele = this.parentNode;
+		console.log(ele);
+		ele.remove();
+		
+	});*/
+
+	//const deleteButtons = document.getElementsByClassName('deleteButton');
+
+	
+	//edit emp
+	
+	/*document.getElementById('editButton').addEventListener('click',function(){
+		const ele = this.parentNode;
+		console.log(ele);
+		console.log("-------");
+		//console.log(ele.innerHTML);
+		//console.log(ele.childNodes[0].nodeValue);
+		//console.log(ele.childNodes[0].nodeValue);
+		//console.log(ele.childNodes[0].innerHTML);
+		console.log("hello");
+
+		const arr = ["empName","empId","empPhone"];
+		for(let i=0; i<3 ; i++){
+			console.log("hello");
+			document.getElementById(arr[i]).innerHTML= ele.childNodes[i+1].innerHTML;
+		}
+
+	});
+*/	
+
+	//try
+	/*const tryBtn = document.createElement("button");
+	tryBtn.appendChild(document.createTextNode("try"));
+	card.appendChild(tryBtn);
+	tryBtn.onclick = just ;*/
+
+	function deleteButton(){
+		/*let id=this.parentNode.childNodes[2].innerHTML.substr(4);
+		document.getElementById(id+"delete").addEventListener('click',function(){
+			const ele = this.parentNode;
+			ele.remove();
+		});*/
+
+		const ele = this.parentNode;
+		ele.remove();
+	}	
+
+
+const inputField = document.querySelector('#empName');
+
+inputField.addEventListener('focus', function(event) {
+    console.log('Input field focused');
+    // Additional actions when input field is focused
+},true);
+
+inputField.addEventListener('blur', function(event) {
+    console.log('Input field blurred');
+    // Additional actions when input field loses focus
+},true);
+
+
+-----
+
+
+/*const form = document.querySelector('#myForm');
+
+form.addEventListener('focus', function(event) {
+    // Check if the event target is an input field or any other specific field
+    if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA' || event.target.tagName === 'SELECT') {
+        console.log(`${event.target.tagName} field focused`);
+        // Additional actions when a form field is focused
+    }
+
+	 const label = document.querySelector(`label[for="${event.target.id}"]`);
+    if (label) {
+        console.log('Label text:',event.target.id);
+    }
+}, true); 
+
+form.addEventListener('blur', function(event) {
+    // Check if the event target is an input field or any other specific field
+    if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA' || event.target.tagName === 'SELECT') {
+        console.log(`${event.target.tagName} field blurred`);
+        // Additional actions when a form field is blurred
+    }
+}, true); 
+*/
+
